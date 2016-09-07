@@ -1,0 +1,43 @@
+set size   1.0, 0.8
+set origin 0.0, 0.0
+
+set lmargin at screen 0.12
+set rmargin at screen 0.85
+set bmargin at screen 0.12
+set tmargin at screen 0.75
+
+set xrange [0.01:1]
+set yrange [0.005:0.4]
+
+set xtics 0.2
+set ytics 0.05
+
+set xtics center offset 0.0,  0.7
+set ytics center offset -0.4, 0.0
+
+set mxtics 2
+set mytics 2
+
+set format y "%3.2f"
+set format x "%3.1f"
+
+set label 1 "{/Symbol G}_{ph} (eV)" at screen 0.03, 0.35 rotate by 90
+set label 2 "V_{ms} (eV)" at screen 0.45, 0.03
+
+set pm3d map
+
+set mcbtics 2
+
+set format cb "%2.f%%"
+set palette rgb 33,13,10
+
+set pm3d flush begin noftriangles scansforward interpolate 1,5
+
+splot 'flux-relax-coup.dat' u 1:2:5 ti ""
+
+pause -1
+
+set term postscript eps color solid enhanced "Arial-Bold" 22
+set output "iqe-relax-coup.eps"
+
+replot

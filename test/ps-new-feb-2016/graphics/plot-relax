@@ -1,0 +1,23 @@
+set ytics 5
+set mxtics 2
+set mytics 2
+
+#set my2tics 2
+#set y2tics
+#set ytics nomirror
+
+set logscale x
+set xrange [:1]
+set yrange [22:]
+
+set xlabel "{/Symbol G}_{ph} (eV)"
+set ylabel "IQE (%)"
+
+p 'flux-relax.dat' u 1:4 w l lw 5 lc rgb "red" ti ""
+
+pause -1
+
+set term postscript eps color solid enhanced "Arial-Bold" 26
+set output "iqe-relax.eps"
+
+replot

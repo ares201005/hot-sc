@@ -1,0 +1,36 @@
+set mytics 2
+set mxtics 2
+
+set format x "%3.1f"
+set format y "%3.0f"
+
+set size   1.0, 1.0
+set origin 0.0, 0.0
+
+
+set lmargin at screen 0.12
+set rmargin at screen 0.95
+set bmargin at screen 0.12
+set tmargin at screen 0.95
+
+set xrange [1.6:3.2]
+#set xrange [550:750]
+#set yrange [0:]
+
+
+set xlabel "Photon energy (eV)"
+set ylabel "Current (uA)"
+
+#p 'curr-freq.dat' u (1240/$1):(($4+$5)/1000) w l lw 5 lc rgb "blue" ti "with nanoparticle",\
+#  'curr-freq.dat' u ($1240/$1):($4/1000)      w l lw 5 lc rgb "red"  ti " w/o nanoparticle"
+
+p 'curr-freq.dat' u 1:(($4+$5)/1000) w l lw 5 lc rgb "blue" ti "with nanoparticle",\
+  'curr-freq.dat' u 1:($4/1000)      w l lw 5 lc rgb "red"  ti " w/o nanoparticle"
+
+pause -1
+
+
+set term postscript eps color solid enhanced "Arial-Bold" 26
+set output "amplification.eps"
+
+replot

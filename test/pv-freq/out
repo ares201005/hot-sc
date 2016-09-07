@@ -1,0 +1,60 @@
+ 
+
+ WBL-Heom calculation started on 
+ 02/11/2015  21:22:30
+
+ norbs       2
+ nLead       2
+ elcoup:   0.1000000E+01
+ hop       0.1000000E+01
+ miu0      0.0000000E+00
+ onsite    0.1000000E+01
+            half_w     1000.0000   1000.0000      0.1000      0.1000      0.1000
+ temperature:   0.3000000E+03
+ left voltage:    0.0000000E+00
+ right voltage:   0.0000000E+00
+ gate voltage:    0.0000000E+00
+ Is photon considered?   T
+ Is plasmon considered?  F
+ number of mode:    1
+ photon freq:     0.4000000E+01
+ e-p coupling:    0.1000000E+00
+ photon telec:    0.6000000E+04
+ 
+  fock0(1,1), fock0(2,2) : -0.1000000E+01  0.1000000E+01
+  lamdaL(1,1),lamdaL(2,2):  0.1000000E+01  0.1000000E-01
+  lamdaR(1,1),lamdaR(2,2):  0.1000000E-01  0.1000000E+01
+ beta(ev^-1):   0.3867983E+02
+ telec(ev):     0.2585327E-01
+  ========= enter  Landauer.f90 ===========
+from  2 lead to  1 lead
+current from 2 to  1 lead is  0.0000000E+00 nA
+current through 1 lead is  0.0000000E+00 nA
+ 
+from  1 lead to  2 lead
+current from 1 to  2 lead is  0.0000000E+00 nA
+current through 2 lead is  0.0000000E+00 nA
+ 
+ 
+  ========= leave  Landauer.f90 ===========
+ 
+  node   energy        occ           flux      coupling-factor 
+   1     4.0000    0.43702E-03    0.25000E+00    0.11959E+02
+  power density is:   1.0000kW/m^2/ev
+ 
+  =========== entering landauerphlop ================
+  calculate steady state current with e-p coupling
+  integration range:  -5.00000000000000        5.00000000000000     
+  number of grid:           8000
+  current  through lead:  1 is   0.0000000E+00 nA
+  current2 through lead:  1 is   0.8727778E+02 nA
+  current  through lead:  2 is   0.0000000E+00 nA
+  current2 through lead:  2 is  -0.8727778E+02 nA
+ 
+  absorped photon flux is   0.5447371E-03 /fs
+  maximum photocurrent is   0.8727778E+02 nA
+  IQE is                  100.00%
+  ========== leaving landauerphlop =============
+
+ WBL-Heom Calculation Finished on 
+ 02/11/2015  21:22:31

@@ -1,0 +1,123 @@
+ 
+
+ WBL-Heom calculation started on 
+ 25/03/2016  13:54:50
+
+ norbs       2
+ nLead       2
+ elcoup:   0.1000000E+01
+ hop       0.1000000E+01
+ miu0      0.0000000E+00
+ onsite    0.5000000E+00
+            half_w     1000.0000   1000.0000      0.1000      0.1000      0.1000
+ temperature:   0.3000000E+03
+ beta(ev^-1):   0.3867983E+02
+ telec(ev):     0.2585327E-01
+ left voltage:    0.0000000E+00
+ right voltage:   0.0000000E+00
+ gate voltage:    0.0000000E+00
+ Is photon considered?   F
+ Is plasmon considered?  T
+ number of mode:    1
+ photon freq:     0.1000000E+01
+ e-p coupling:    0.1000000E+01
+ photon telec:    0.6000000E+04
+ barrier for electron:        0.5000000E+00
+ barrier for hole:            0.5000000E+00
+ metal-system coupling:       0.1000000E+01
+ metal-plasmon coupling:      0.2000000E-02
+ relaxation time:             0.1000000E-01
+ number of states in metal:    50
+ states of metal
+    1 -0.4000000E+01
+    2 -0.3836735E+01
+    3 -0.3673469E+01
+    4 -0.3510204E+01
+    5 -0.3346939E+01
+    6 -0.3183673E+01
+    7 -0.3020408E+01
+    8 -0.2857143E+01
+    9 -0.2693878E+01
+   10 -0.2530612E+01
+   11 -0.2367347E+01
+   12 -0.2204082E+01
+   13 -0.2040816E+01
+   14 -0.1877551E+01
+   15 -0.1714286E+01
+   16 -0.1551020E+01
+   17 -0.1387755E+01
+   18 -0.1224490E+01
+   19 -0.1061224E+01
+   20 -0.8979592E+00
+   21 -0.7346939E+00
+   22 -0.5714286E+00
+   23 -0.4081633E+00
+   24 -0.2448980E+00
+   25 -0.8163265E-01
+   26  0.8163265E-01
+   27  0.2448980E+00
+   28  0.4081633E+00
+   29  0.5714286E+00
+   30  0.7346939E+00
+   31  0.8979592E+00
+   32  0.1061224E+01
+   33  0.1224490E+01
+   34  0.1387755E+01
+   35  0.1551020E+01
+   36  0.1714286E+01
+   37  0.1877551E+01
+   38  0.2040816E+01
+   39  0.2204082E+01
+   40  0.2367347E+01
+   41  0.2530612E+01
+   42  0.2693878E+01
+   43  0.2857143E+01
+   44  0.3020408E+01
+   45  0.3183673E+01
+   46  0.3346939E+01
+   47  0.3510204E+01
+   48  0.3673469E+01
+   49  0.3836735E+01
+   50  0.4000000E+01
+ 
+  fock0(1,1), fock0(2,2) : -0.5000000E+00  0.5000000E+00
+  lamdaL(1,1),lamdaL(2,2):  0.1000000E+01  0.3988239E-08
+  lamdaR(1,1),lamdaR(2,2):  0.3988239E-08  0.1000000E+01
+  ========= enter  Landauer.f90 ===========
+  from  2 lead to  1 lead
+  current from 2 to  1 lead is  0.0000000E+00 nA
+  current through 1 lead is  0.0000000E+00 nA
+ 
+  from  1 lead to  2 lead
+  current from 1 to  2 lead is  0.0000000E+00 nA
+  current through 2 lead is  0.0000000E+00 nA
+ 
+ 
+  ========= leave  Landauer.f90 ===========
+ 
+  node   energy        occ           flux      coupling-factor , (eps-1/(eps+2)-
+ 1
+   1     1.0000    0.16900E+00    0.10000E+01    0.24325E+01    0.42229E-01    0.35517E-02
+  power density is:   1.0000kW/m^2/ev
+ 
+  =========== entering LandauerPsLop2 ================
+  calculate steady state current with e-p coupling
+ integration range:   -1.500    1.500
+ number of grid:      2400
+  current  through lead:  1 is   0.0000000E+00 nA
+  current2 through lead:  1 is   0.5963726E-02 nA
+ 
+  current  through lead:  2 is   0.0000000E+00 nA
+  current2 through lead:  2 is  -0.5963726E-02 nA
+ 
+ 
+  hot-carrier injection flux is    0.372221E-07  -0.372221E-07 /fs
+  hot-carrier injection curr is    0.596373E-02  -0.596373E-02 nA
+ 
+  absorped photon flux is   0.1041992E-06 /fs
+  maximum photocurrent is   0.1669479E-01 nA
+  IQE is                      35.722%
+  ========== leaving LandauerPsLop =============
+
+ WBL-Heom Calculation Finished on 
+ 25/03/2016  13:55:29

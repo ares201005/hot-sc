@@ -1,0 +1,4 @@
+$general lphoton=.false., tplasmon=.true., lscba=.false. $end
+$temperature telec=300.0d0 $end
+$land ngrid=10, downrange=0.5d0, uprange=0.5d0 $end
+$photon mode=1,phfreq=3.60, $end

@@ -1,0 +1,24 @@
+
+set xlabel "E (eV)"
+set ylabel "DOS"
+
+set xtics format "%3.1f"
+
+set xrange [-2:2]
+
+set xtics 0.5
+set mxtics 2
+
+set ytics 2
+set mytics 2
+
+p 'DOS.dat' u 1:2 w l lw 5 lc rgb "black" ti ""
+
+pause -1
+
+
+
+set term postscript eps color solid enhanced "Arial-Bold" 24
+set output "DOS.eps"
+
+replot

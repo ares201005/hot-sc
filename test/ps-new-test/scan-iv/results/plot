@@ -1,0 +1,20 @@
+set mytics 2
+set mxtics 2
+
+set ytics nomirror
+set y2tics 
+
+set my2tics 2
+
+set yrange [-70:200]
+set y2range [0:]
+set xrange [0:2.0]
+
+set key left
+
+p  'curr-iv.dat' u 1:($4+$5)  w l lw 3 lc rgb "black" ti "Dark",\
+   'curr-iv.dat' u 1:4        w l lw 3 lc rgb "red"   ti "Light",\
+   'curr-iv.dat' u 1:(-$1*($4+$5)) w l lw 3 lc rgb "blue" axis x1y2 ti "Power"
+
+
+pause -1

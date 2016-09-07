@@ -1,0 +1,21 @@
+set xlabel "Energy (eV)"
+set ylabel "Hot carriers"
+
+set mxtics 2
+set mytics 2
+
+set format y "%3.1f"
+#set format y "%.1tx10^{%+3T}"
+
+p 'hot.dat' u 2:3 w lp lw 5 pt 5 ps 2 lc rgb 'red'  ti "Hot electron",\
+  'hot.dat' u 2:4 w lp lw 5 pt 7 ps 2 lc rgb 'blue' ti "Hot hole"
+
+pause -1
+
+set term postscript eps color solid enhanced "Arial-Bold" 26
+set output "hot-3.6.eps"
+#set output "hot-2.6.eps"
+#set output "hot-1.6.eps"
+#set output "hot-0.6.eps"
+
+replot

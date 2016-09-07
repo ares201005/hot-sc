@@ -1,0 +1,37 @@
+#!/bin/sh
+
+##########
+# example for serial jobs
+# to run the job, just execute:
+#     qsub serial.qsub
+##########
+
+
+# change the workding directory to where you submitted the job
+#$ -cwd
+
+# merge the standard error stream into the standard output stream instead of having two separate error and output streams
+#$ -j y
+#$ -pe orte 8
+
+# request bash shell as shell for job
+#$ -S /bin/bash
+
+
+export OMP_SCHEDULE=DYNAMIC
+export OMP_NUM_THREADS=$NSLOTS
+
+
+#
+# print date and time
+date
+hostname
+#cp $SGE_O_WORKDIR/* $TMPDIR
+#cd $TMPDIR 
+# Sleep for 20 seconds
+
+ ../../bin/negf-pt <new.td >out 
+
+#sleep 20
+# print date and time again
+date

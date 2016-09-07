@@ -1,0 +1,120 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+100	rmatrix/integral01.f90	/^ 100  continue$/;"	l	subroutine:integral01	file:
+1000	main/model.f90	/^1000 format(\/,' WBL-Heom calculation started on ',\/,&$/;"	l	program:model	file:
+1014	main/model.f90	/^1014 format(\/,' WBL-Heom Calculation Finished on ',\/,&$/;"	l	program:model	file:
+104	main/model.f90	/^104 continue$/;"	l	program:model	file:
+105	main/model.f90	/^105 continue$/;"	l	program:model	file:
+aL	module/transmod.f90	/^real*8, save  :: aL,/;"	v	module:transmod
+aR	module/transmod.f90	/^real*8, save  :: aL, aR,/;"	v	module:transmod
+ampG	module/transmod.f90	/^real*8, save  :: aL, aR, ampL, ampR, ampG,/;"	v	module:transmod
+ampL	module/transmod.f90	/^real*8, save  :: aL, aR, ampL,/;"	v	module:transmod
+ampR	module/transmod.f90	/^real*8, save  :: aL, aR, ampL, ampR,/;"	v	module:transmod
+auxeom	main/auxeom.f90	/^subroutine auxeom(/;"	s
+auxeomph	main/auxeomph.f90	/^subroutine auxeomph(/;"	s
+auxinit	main/auxinit.f90	/^subroutine auxinit(/;"	s
+auxinitph	main/auxinitph.f90	/^subroutine auxinitph(/;"	s
+beta	module/transmod.f90	/^real*8, save  :: telec,beta$/;"	v	module:transmod
+bocc	module/transphonon.f90	/^real*8, allocatable, save :: bocc(/;"	v	module:transphonon
+buildpheom	main/buildpheom.f90	/^subroutine buildpheom(/;"	s
+buildpheomph	main/buildpheomph.f90	/^subroutine buildpheomph(/;"	s
+ccopym	rmatrix/cmulti.f90	/^      subroutine ccopym(/;"	s
+cdmulti	rmatrix/cmulti.f90	/^      subroutine cdmulti(/;"	s
+cdmulti1	rmatrix/cmulti.f90	/^      subroutine cdmulti1(/;"	s
+cdmultip	rmatrix/cmulti.f90	/^      subroutine cdmultip(/;"	s
+cmaxmat	rmatrix/dmaxmat.f90	/^subroutine cmaxmat(/;"	s
+cmulmvm	rmatrix/cmulti.f90	/^      subroutine cmulmvm(/;"	s
+cmulti	rmatrix/cmulti.f90	/^      subroutine cmulti(/;"	s
+cmulti1	rmatrix/cmulti.f90	/^      subroutine cmulti1(/;"	s
+cmultimm	rmatrix/cmulti.f90	/^      subroutine cmultimm(/;"	s
+coup	module/transphonon.f90	/^real*8, allocatable, save :: coup(/;"	v	module:transphonon
+crL	module/transmod.f90	/^complex*16, allocatable, save :: crL(/;"	v	module:transmod
+crR	module/transmod.f90	/^complex*16, allocatable, save :: crL(:,:), crR(/;"	v	module:transmod
+currland	main/model.f90	/^real*8 :: currland$/;"	v	program:model
+date	main/model.f90	/^character*10 :: date,/;"	v	program:model
+dcmulti	rmatrix/cmulti.f90	/^      subroutine dcmulti(/;"	s
+deltah	module/transmod.f90	/^real*8, allocatable, save     :: deltah(/;"	v	module:transmod
+deltapt	module/transmod.f90	/^real*8, allocatable, save     :: deltapt(/;"	v	module:transmod
+dmaxmat	rmatrix/dmaxmat.f90	/^subroutine dmaxmat(/;"	s
+dmaxmat2	rmatrix/dmaxmat.f90	/^subroutine dmaxmat2(/;"	s
+dmulti	rmatrix/cmulti.f90	/^      subroutine dmulti(/;"	s
+dopant	main/model.f90	/^namelist \/dopant\//;"	n	program:model
+dopvalue1	main/model.f90	/^real*8 :: dopvalue1,/;"	v	program:model
+dopvalue2	main/model.f90	/^real*8 :: dopvalue1, dopvalue2,/;"	v	program:model
+dopvalue3	main/model.f90	/^real*8 :: dopvalue1, dopvalue2, dopvalue3,/;"	v	program:model
+dopvalue4	main/model.f90	/^real*8 :: dopvalue1, dopvalue2, dopvalue3, dopvalue4,/;"	v	program:model
+dopvalue5	main/model.f90	/^real*8 :: dopvalue1, dopvalue2, dopvalue3, dopvalue4, dopvalue5$/;"	v	program:model
+drho0	main/model.f90	/^complex*16, allocatable :: drho0(/;"	v	program:model
+dt	main/model.f90	/^real*8 :: tmax, dt$/;"	v	program:model
+dt2	main/model.f90	/^real*8 :: tt, dt2,/;"	v	program:model
+dt3	main/model.f90	/^real*8 :: tt, dt2, dt3,/;"	v	program:model
+dt6	main/model.f90	/^real*8 :: tt, dt2, dt3, dt6$/;"	v	program:model
+ebot	module/transmod.f90	/^real*8, save  :: aL, aR, ampL, ampR, ampG,miu0, ebot$/;"	v	module:transmod
+elcoup	main/model.f90	/^real*8 :: onsite, hop, elcoup$/;"	v	program:model
+epcoup	module/transphonon.f90	/^real*8, save :: epcoup,/;"	v	module:transphonon
+epcoupling	rmatrix/epcoupling.f90	/^subroutine epcoupling(/;"	s
+eta	module/transmod.f90	/^real*8, allocatable  :: eta(/;"	v	module:transmod
+fieldtyp	module/transmod.f90	/^integer, save                 :: fieldtyp$/;"	v	module:transmod
+fock0	main/model.f90	/^real*8, allocatable :: fock0(/;"	v	program:model
+getphikph	rmatrix/getphikph.f90	/^subroutine getphikph(/;"	s
+getsteady	main/getsteady.f90	/^subroutine getsteady(/;"	s
+hop	main/model.f90	/^real*8 :: onsite, hop,/;"	v	program:model
+i	main/model.f90	/^in/;"	v	program:model
+idop1	main/model.f90	/^integer :: idop1=/;"	v	program:model
+idop2	main/model.f90	/^integer :: idop1=1, idop2=/;"	v	program:model
+idop3	main/model.f90	/^integer :: idop1=1, idop2=1, idop3=/;"	v	program:model
+idop4	main/model.f90	/^integer :: idop1=1, idop2=1, idop3=1, idop4=/;"	v	program:model
+ierror	main/model.f90	/^integer :: ierror(/;"	v	program:model
+integral01	rmatrix/integral01.f90	/^      subroutine integral01(/;"	s
+j	main/model.f90	/^integer :: i, j,/;"	v	program:model
+k	main/model.f90	/^integer :: i, j, k,/;"	v	program:model
+l	main/model.f90	/^integer :: i, j, k, l$/;"	v	program:model
+lamdaL	module/transmod.f90	/^real*8, allocatable, save     :: lamdaL(/;"	v	module:transmod
+lamdaR	module/transmod.f90	/^real*8, allocatable, save     :: lamdaL(:,:), lamdaR(/;"	v	module:transmod
+land	main/landauer.f90	/^namelist \/land\//;"	n	subroutine:landauer
+landauer	main/landauer.f90	/^subroutine landauer(/;"	s
+lphonon	module/transphonon.f90	/^logical, save :: lphonon$/;"	v	module:transphonon
+ltd	main/model.f90	/^logical :: ltd=/;"	v	program:model
+matrix	main/model.f90	/^namelist \/matrix\//;"	n	program:model
+miu0	module/transmod.f90	/^real*8, save  :: aL, aR, ampL, ampR, ampG,miu0,/;"	v	module:transmod
+mode	module/transphonon.f90	/^integer, save :: mode$/;"	v	module:transphonon
+model	main/model.f90	/^program model$/;"	p
+modelderivtr	main/modelderivtr.f90	/^subroutine modelderivtr(/;"	s
+modelderivtrph	main/modelderivtrph.f90	/^subroutine modelderivtrph(/;"	s
+newhmat	module/transmod.f90	/^complex*16, allocatable, save :: newhmat(/;"	v	module:transmod
+norbs	main/model.f90	/^integer :: norbs,/;"	v	program:model
+npade	main/model.f90	/^integer :: norbs, npade$/;"	v	program:model
+onsite	main/model.f90	/^real*8 :: onsite,/;"	v	program:model
+pade	main/pade.f90	/^subroutine pade(/;"	s
+pheigv	module/transphonon.f90	/^real*8, allocatable, save :: pheigv(/;"	v	module:transphonon
+phfreq	module/transphonon.f90	/^real*8, save :: epcoup, phfreq /;"	v	module:transphonon
+phikL	main/model.f90	/^complex*16, allocatable :: phikL(/;"	v	program:model
+phikLph	module/transphonon.f90	/^complex*16, allocatable, save :: phikLph(/;"	v	module:transphonon
+phikLph1	module/transphonon.f90	/^complex*16, allocatable, save :: phikLph1(/;"	v	module:transphonon
+phikLph2	module/transphonon.f90	/^complex*16, allocatable, save :: phikLph1(:,:,:,:), phikLph2(/;"	v	module:transphonon
+phikR	main/model.f90	/^complex*16, allocatable :: phikL(:,:,:), phikR(/;"	v	program:model
+phikRph	module/transphonon.f90	/^complex*16, allocatable, save :: phikLph(:,:,:), phikRph(/;"	v	module:transphonon
+phikRph1	module/transphonon.f90	/^complex*16, allocatable, save :: phikRph1(/;"	v	module:transphonon
+phikRph2	module/transphonon.f90	/^complex*16, allocatable, save :: phikRph1(:,:,:,:), phikRph2(/;"	v	module:transphonon
+phonon	main/model.f90	/^namelist \/phonon\//;"	n	program:model
+pkL	module/transphonon.f90	/^complex*16, allocatable, save :: pkL(/;"	v	module:transphonon
+pkR	module/transphonon.f90	/^complex*16, allocatable, save :: pkL(:,:,:), pkR(/;"	v	module:transphonon
+rk4trans	main/rk4trans.f90	/^subroutine rk4trans(/;"	s
+rk4transph	main/rk4transph.f90	/^subroutine rk4transph(/;"	s
+sigma0	module/transphonon.f90	/^real*8, allocatable, save :: sigma0(/;"	v	module:transphonon
+sigmagrless	rmatrix/sigmagrless.f90	/^subroutine sigmagrless(/;"	s
+symmetrize	rmatrix/sigmagrless.f90	/^subroutine symmetrize(/;"	s
+td	main/model.f90	/^namelist \/td\//;"	n	program:model
+telec	module/transmod.f90	/^real*8, save  :: telec,/;"	v	module:transmod
+temperature	main/model.f90	/^namelist \/temperature\//;"	n	program:model
+theta	module/transmod.f90	/^real*8, allocatable  :: eta(:), theta(/;"	v	module:transmod
+time	main/model.f90	/^character*10 :: date,time$/;"	v	program:model
+tmax	main/model.f90	/^real*8 :: tmax,/;"	v	program:model
+transmod	module/transmod.f90	/^module transmod$/;"	m
+transphonon	module/transphonon.f90	/^module transphonon$/;"	m
+tt	main/model.f90	/^real*8 :: tt,/;"	v	program:model
+voltage	main/model.f90	/^namelist \/voltage\//;"	n	program:model

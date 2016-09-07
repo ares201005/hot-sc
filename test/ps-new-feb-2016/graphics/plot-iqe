@@ -1,0 +1,18 @@
+set key left
+
+set mxtics 2
+set mytics 2
+
+set xrange [0.5:4.5]
+
+set xlabel "Photon energy (eV)"
+set ylabel "IQE (%)"
+
+p 'flux-freq.dat' u 1:4 w l lw 5 lc rgb "black" ti "IQE" 
+
+pause -1
+
+set term postscript eps color solid enhanced "Arial-Bold" 26
+set output "iqe.eps"
+
+replot

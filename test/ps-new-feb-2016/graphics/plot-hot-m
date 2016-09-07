@@ -1,0 +1,111 @@
+set term postscript eps color solid enhanced "Arial-Bold" 20
+set output "hot-m.eps"
+
+#set xlabel "Energy (eV)"
+#set ylabel "Hot carriers"
+
+set xrange [-4:3.99]
+set mytics 2
+set xtics 1
+set mxtics 2
+
+set size   1.0, 1.0
+set origin 0.0, 0.0
+set multiplot layout 2,2
+set format y ""
+set format y2 ""
+## labels
+set label 1 "Energy (eV)" at screen 0.47,0.04 
+set label 2 "Hot carriers" at screen 0.04,0.42 rotate by 90
+set format  x ""
+# plot 1
+set lmargin at screen 0.08
+set rmargin at screen 0.53
+set bmargin at screen 0.52
+set tmargin at screen 0.95
+
+set ytics 0.02
+#set format y "%3.1f"
+set label 3 font ",20" "(a)"   at screen 0.09, 0.93
+set label 4 font ",20" "{/Symbol w}=3.5 eV"   at screen 0.09, 0.88
+set ytics nomirror
+
+set yrange [-0.001:0.08]
+
+p 'hot.dat.3.5' u 2:3 w lp lw 4 pt 5 ps 1.5 lc rgb 'red'  ti "Hot electron",\
+  'hot.dat.3.5' u 2:4 w lp lw 4 pt 7 ps 1.5 lc rgb 'blue' ti "Hot hole"
+
+unset key
+
+# plot 2
+
+set lmargin at screen 0.53
+set rmargin at screen 0.98
+set bmargin at screen 0.52
+set tmargin at screen 0.95
+
+unset ytics
+set y2tics 5e-3
+set y2tics nomirror
+set my2tics 2
+#set format y  ""
+#set format y2 "%.1tx10^{%+3T}"
+
+set y2range [-0.00001:0.05]
+
+set label 5 font ",20" "(b)"   at screen 0.54, 0.93
+set label 6 font ",20" "{/Symbol w}={/Symbol w}_p"   at screen 0.54, 0.88
+p 'hot.dat.2.5' u 2:3 w lp lw 4 pt 5 ps 1.5 lc rgb 'red'  ti "Hot electron" axis x1y2,\
+  'hot.dat.2.5' u 2:4 w lp lw 4 pt 7 ps 1.5 lc rgb 'blue' ti "Hot hole" axis x1y2
+
+set format x "%2.0f"
+
+# plot 3
+set lmargin at screen 0.08
+set rmargin at screen 0.53
+set bmargin at screen 0.15
+set tmargin at screen 0.52
+
+unset y2tics
+set ytics 5e-5 
+set ytics nomirror
+
+#set format y  "%.1tx10^{%+3T}"
+#set format y2 ""
+
+set yrange [0:1e-4]
+
+set label 7 font ",20" "(c)"   at screen 0.09, 0.50
+set label 8 font ",20" "{/Symbol w}=1.5 eV"   at screen 0.09, 0.45
+
+p 'hot.dat.1.5' u 2:3 w lp lw 4 pt 5 ps 1.5 lc rgb 'red'  ti "Hot electron",\
+  'hot.dat.1.5' u 2:4 w lp lw 4 pt 7 ps 1.5 lc rgb 'blue' ti "Hot hole"
+
+# plot 4
+set lmargin at screen 0.53
+set rmargin at screen 0.98
+set bmargin at screen 0.15
+set tmargin at screen 0.52
+
+unset ytics
+set y2tics 5e-8
+set y2tics nomirror 
+set my2tics 2
+
+#set format y  ""
+#set format y2 "%.1tx10^{%+3T}"
+
+set y2range [0:1e-7]
+
+set label 9  font ",20" "(d)"   at screen 0.54, 0.50
+set label 10 font ",20" "{/Symbol w}=0.5 eV"   at screen 0.54, 0.45
+
+p 'hot.dat.0.5' u 2:3 w lp lw 4 pt 5 ps 1.5 lc rgb 'red'  ti "Hot electron" axis x1y2,\
+  'hot.dat.0.5' u 2:4 w lp lw 4 pt 7 ps 1.5 lc rgb 'blue' ti "Hot hole" axis x1y2
+
+
+unset multiplot
+
+#pause -1
+
+#replot

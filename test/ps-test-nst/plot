@@ -1,0 +1,10 @@
+set xlabel "Number of states"
+set ylabel "Current (nA)"
+
+p 'curr-nst.dat' u 1:3 w lp lw 3 lc rgb "black" pt 7 ps 2 ti "Convergence" 
+
+pause -1
+
+set term postscript eps color solid enhance "Arial-Bold" 24
+set output "convd.eps"
+replot

@@ -1,0 +1,16 @@
+set ytics nomirror
+set y2tics
+
+set mxtics  2
+set mytics  2
+set my2tics 2
+
+set xrange [0:2.1]
+set yrange  [:4000]
+set y2range [0:]
+
+p 'curr-gap.dat' u 2:5       w l lw 5 lc rgb "black" ti "Dark", \
+  'curr-gap.dat' u 2:($5+$6) w l lw 5 lc rgb "red"   ti "Light",\
+  'curr-gap.dat' u 2:(-$2*($5+$6)) w l lw 5 lc rgb "blue" axis x1y2 ti "Power"
+
+pause -1

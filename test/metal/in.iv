@@ -1,6 +1,0 @@
-$general lphoton=.false., tplasmon=.false. lscba=.false. $end
-$system nLead=3, norbs=2, onsite=1.0d0, hop=0.1d0, elcoup=0.1d0 miu0=0.d0, half_w(1)=1.d3, half_w(2)=1.d3,half_w(3)=1.d3 $end
-$temperature telec=300.0d0 $end
-$land ngrid=15, downrange=2.0d0, uprange=2.0d0 $end
-$photon epcoup=0.1d0, phfreq=4.0d0,mode=100  $end
-$voltage ampG=0.d0,

@@ -88,7 +88,7 @@ do kd = 1, 2
   if(kd==1) then
     ctmp1 = bocc(nk)*greenr - 0.5d0*greenl
   else
-    ctmp1 = (1.d0+bocc(nk))*greenr + 05d0*greenl
+    ctmp1 = (1.d0+bocc(nk))*greenr + 0.5d0*greenl
   endif
 !
   !call dcmulti(dim1,dim1,coup(1:dim1,1:dim1,nk),ctmp1, cunity, ctmp2)
